@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fargate Systems Training | Sysadmin Courses, Edinburgh</title>
+<meta name="description" content="Professional development for system administrators. Tiered programmes for teams of every size. Get a quote from Fargate Systems Training in Edinburgh.">
+<meta property="og:title" content="Fargate Systems Training | Sysadmin Courses, Edinburgh">
+<meta property="og:description" content="Sysadmin training built for enterprise scale. Three tiers, one standard. Request an estimate from Edinburgh.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{SITE_URL}}/">
+<meta property="og:locale" content="en_GB">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%2378350f'/%3E%3Cpath d='M8 8h16v3H8zm0 6h12v3H8zm0 6h14v3H8z' fill='%23fbbf24' opacity='.8'/%3E%3C/svg%3E">
+<link rel="canonical" href="{{SITE_URL}}/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;600;700&family=Barlow:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config={theme:{extend:{colors:{brand:{50:'#fffbeb',100:'#fef3c7',200:'#fde68a',300:'#fcd34d',400:'#fbbf24',500:'#f59e0b',600:'#78350f',700:'#6b2f0d',800:'#5a280b',900:'#451a03',950:'#2d1102'}},fontFamily:{sans:['Barlow','ui-sans-serif','system-ui','sans-serif'],heading:['Josefin Sans','ui-sans-serif','system-ui','sans-serif']}}}}
+</script>
+<style>
+html{scroll-behavior:smooth}
+*:focus-visible{outline:2px solid #78350f;outline-offset:2px}
+.fade-h{opacity:0;transition:opacity .7s ease}
+.fade-v{opacity:1}
+@media print{header,footer,#cookie-banner{display:none!important}}
+</style>
+</head>
+<body class="bg-white text-gray-600 font-sans antialiased">
+
+<!-- HEADER — Centered Logo -->
+<header class="sticky top-0 z-40 bg-white border-b border-gray-100">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6">
+    <div class="flex flex-col items-center py-3 sm:py-0 sm:flex-row sm:justify-between sm:h-16">
+      <a href="#" class="flex items-center gap-2 mb-2 sm:mb-0">
+        <span class="w-8 h-8 bg-brand-600 rounded flex items-center justify-center">
+          <svg class="w-4 h-4" viewBox="0 0 16 16" fill="none"><rect x="2" y="2" width="12" height="2.5" rx="0.5" fill="#fbbf24" opacity=".85"/><rect x="2" y="6.5" width="9" height="2.5" rx="0.5" fill="#fbbf24" opacity=".85"/><rect x="2" y="11" width="10.5" height="2.5" rx="0.5" fill="#fbbf24" opacity=".85"/></svg>
+        </span>
+        <span class="font-heading font-semibold text-gray-900 tracking-wide">Fargate</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-8">
+        <a href="#tiers" class="text-sm text-gray-500 hover:text-gray-900 transition-colors tracking-wide">Programmes</a>
+        <a href="#case" class="text-sm text-gray-500 hover:text-gray-900 transition-colors tracking-wide">Case Study</a>
+        <a href="#reviews" class="text-sm text-gray-500 hover:text-gray-900 transition-colors tracking-wide">Reviews</a>
+        <a href="#faq" class="text-sm text-gray-500 hover:text-gray-900 transition-colors tracking-wide">FAQ</a>
+        <a href="tel:+441312478603" class="text-sm text-gray-500 hover:text-gray-900 transition-colors">+44 131 247 8603</a>
+        <a href="#quote" class="px-5 py-2 border-2 border-brand-600 text-brand-600 text-sm font-semibold rounded-lg hover:bg-brand-600 hover:text-white transition-colors tracking-wide">Get a Quote</a>
+      </nav>
+      <button id="mob-btn" class="md:hidden absolute right-4 top-4 p-2 text-gray-500" aria-label="Menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </div>
+  <!-- Slide-from-left mobile -->
+  <div id="mob-menu" class="fixed inset-y-0 left-0 w-72 bg-white shadow-2xl z-50 -translate-x-full transition-transform duration-300">
+    <div class="p-6">
+      <button id="mob-close" class="absolute top-4 right-4 p-2 text-gray-400" aria-label="Close"><svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg></button>
+      <div class="mt-10 space-y-4">
+        <a href="#tiers" class="block py-2 text-lg text-gray-800 font-medium mob-link">Programmes</a>
+        <a href="#case" class="block py-2 text-lg text-gray-800 font-medium mob-link">Case Study</a>
+        <a href="#reviews" class="block py-2 text-lg text-gray-800 font-medium mob-link">Reviews</a>
+        <a href="#faq" class="block py-2 text-lg text-gray-800 font-medium mob-link">FAQ</a>
+        <a href="tel:+441312478603" class="block py-2 text-gray-500">+44 131 247 8603</a>
+        <a href="#quote" class="block py-2.5 text-center border-2 border-brand-600 text-brand-600 font-semibold rounded-lg mob-link mt-2">Get a Quote</a>
+      </div>
+    </div>
+  </div>
+  <div id="mob-backdrop" class="fixed inset-0 bg-black/20 z-40 hidden"></div>
+</header>
+
+<main>
+
+<!-- HERO — Minimal Text-Only -->
+<section class="py-32 sm:py-44" data-animate>
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 text-center">
+    <span class="inline-block text-xs font-semibold tracking-[0.2em] uppercase text-brand-600 mb-8">Edinburgh · Est. 2013</span>
+    <h1 class="font-heading font-light text-4xl sm:text-5xl lg:text-6xl text-gray-900 leading-[1.15] tracking-wide max-w-3xl mx-auto">
+      How to Build a Sysadmin Team That Doesn't Need You in the Room
+    </h1>
+    <p class="text-lg font-light text-gray-500 mt-8 mb-12 max-w-xl mx-auto leading-loose">Tiered training programmes for infrastructure teams. From first-year admins to senior engineers running hundreds of nodes. We've been doing this since 2013 — for companies that can't afford to get it wrong.</p>
+    <a href="#quote" class="inline-flex items-center px-8 py-4 border-2 border-brand-600 text-brand-600 font-semibold text-lg rounded-lg hover:bg-brand-600 hover:text-white transition-colors tracking-wide">Request Estimate</a>
+    <p class="text-sm text-gray-400 mt-8">Trusted by 89 organisations across the UK. Average contract length: 3.4 years.</p>
+  </div>
+</section>
+
+<!-- TIERS — By Solution Tier -->
+<section id="tiers" class="py-28 border-t border-gray-100" data-animate>
+  <div class="max-w-6xl mx-auto px-4 sm:px-6">
+    <div class="flex items-center gap-4 mb-3">
+      <h2 class="font-heading font-light text-3xl text-gray-900 tracking-wide">Three tiers</h2>
+      <div class="flex-1 h-px bg-gray-200"></div>
+    </div>
+    <p class="text-gray-500 font-light text-lg mb-16 max-w-xl leading-loose">Same rigour at every level. The difference is depth, duration, and how much we customise.</p>
+
+    <div class="grid lg:grid-cols-3 gap-8">
+      <!-- Essential -->
+      <div class="border border-gray-200 rounded-lg p-8 relative" data-animate>
+        <span class="font-heading font-light text-5xl text-gray-200 absolute top-4 right-6">01</span>
+        <h3 class="font-heading font-semibold text-xl text-gray-900 tracking-wide mb-1 mt-4">Essential</h3>
+        <p class="text-sm text-brand-600 font-medium mb-4">4 weeks &middot; From &pound;1,100/seat</p>
+        <p class="text-gray-600 leading-relaxed">For teams with junior admins who need a solid foundation. Covers file system management, user provisioning, patch scheduling, and basic monitoring. No assumptions about prior knowledge — we start from what they actually know, not what their CV says.</p>
+        <ul class="mt-4 space-y-1 text-sm text-gray-500">
+          <li class="flex gap-2"><span class="text-brand-600">&#10003;</span> Hands-on lab access</li>
+          <li class="flex gap-2"><span class="text-brand-600">&#10003;</span> Weekly instructor session</li>
+          <li class="flex gap-2"><span class="text-brand-600">&#10003;</span> Completion certificate</li>
+        </ul>
+      </div>
+
+      <!-- Professional -->
+      <div class="border-2 border-brand-600 rounded-lg p-8 relative" data-animate>
+        <span class="absolute -top-3 left-6 px-3 py-0.5 bg-brand-600 text-white text-xs font-semibold rounded-full tracking-wide">Most Popular</span>
+        <span class="font-heading font-light text-5xl text-brand-100 absolute top-4 right-6">02</span>
+        <h3 class="font-heading font-semibold text-xl text-gray-900 tracking-wide mb-1 mt-4">Professional</h3>
+        <p class="text-sm text-brand-600 font-medium mb-4">8 weeks &middot; From &pound;2,600/seat</p>
+        <p class="text-gray-600 leading-relaxed">For mid-level and senior engineers. Configuration management at scale, identity federation, incident command, and post-mortem processes. This is where most of our corporate clients start — roughly 65% of engagements are Professional tier.</p>
+        <ul class="mt-4 space-y-1 text-sm text-gray-500">
+          <li class="flex gap-2"><span class="text-brand-600">&#10003;</span> Everything in Essential</li>
+          <li class="flex gap-2"><span class="text-brand-600">&#10003;</span> 1-on-1 mentor sessions (3x)</li>
+          <li class="flex gap-2"><span class="text-brand-600">&#10003;</span> Proctored skills assessment</li>
+          <li class="flex gap-2"><span class="text-brand-600">&#10003;</span> ROI tracking report</li>
+        </ul>
+      </div>
+
+      <!-- Enterprise -->
+      <div class="border border-gray-200 rounded-lg p-8 relative" data-animate>
+        <span class="font-heading font-light text-5xl text-gray-200 absolute top-4 right-6">03</span>
+        <h3 class="font-heading font-semibold text-xl text-gray-900 tracking-wide mb-1 mt-4">Enterprise</h3>
+        <p class="text-sm text-brand-600 font-medium mb-4">Custom &middot; Quoted individually</p>
+        <p class="text-gray-600 leading-relaxed">For organisations with 20+ administrators across multiple sites. We embed with your team, audit existing skills, build a bespoke curriculum, and deliver over 6–12 months. On-site anywhere in the UK. Travel included — no surprises on the invoice.</p>
+        <ul class="mt-4 space-y-1 text-sm text-gray-500">
+          <li class="flex gap-2"><span class="text-brand-600">&#10003;</span> Everything in Professional</li>
+          <li class="flex gap-2"><span class="text-brand-600">&#10003;</span> Custom curriculum design</li>
+          <li class="flex gap-2"><span class="text-brand-600">&#10003;</span> Dedicated account manager</li>
+          <li class="flex gap-2"><span class="text-brand-600">&#10003;</span> Quarterly progress reviews</li>
+          <li class="flex gap-2"><span class="text-brand-600">&#10003;</span> Volume discounts</li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="text-gray-400 text-sm mt-10">We're upfront about limitations: our programmes cover infrastructure operations, not networking, database administration, or application development. Different disciplines, different providers.</p>
+  </div>
+</section>
+
+<!-- CASE STUDY — Story Arc -->
+<section id="case" class="py-28 bg-gray-50 border-t border-gray-100" data-animate>
+  <div class="max-w-6xl mx-auto px-4 sm:px-6">
+    <div class="flex items-center gap-4 mb-3">
+      <h2 class="font-heading font-light text-3xl text-gray-900 tracking-wide">Case study</h2>
+      <div class="flex-1 h-px bg-gray-200"></div>
+    </div>
+    <p class="text-sm text-brand-600 font-medium mb-12">Financial services firm — Edinburgh region — 12-person IT team</p>
+
+    <div class="grid sm:grid-cols-3 gap-6">
+      <div class="bg-white rounded-lg p-7 border border-gray-200">
+        <h3 class="font-heading font-semibold text-gray-900 text-sm uppercase tracking-wider mb-4">Challenge</h3>
+        <p class="text-gray-600 text-sm leading-relaxed">Mean time to restore service after an incident was sitting at 53 minutes. Two senior engineers handled nearly every escalation — the rest of the team lacked confidence to act without approval. Knowledge was concentrated, not distributed.</p>
+      </div>
+      <div class="bg-white rounded-lg p-7 border border-gray-200">
+        <h3 class="font-heading font-semibold text-gray-900 text-sm uppercase tracking-wider mb-4">What we did</h3>
+        <p class="text-gray-600 text-sm leading-relaxed">Ran 8 engineers through the Professional tier over 10 weeks. Built custom lab scenarios mirroring their actual environment — same stack, same failure modes. Added an incident response drill module that they hadn't asked for but clearly needed.</p>
+      </div>
+      <div class="bg-white rounded-lg p-7 border border-gray-200">
+        <h3 class="font-heading font-semibold text-gray-900 text-sm uppercase tracking-wider mb-4">Result</h3>
+        <p class="text-gray-600 text-sm leading-relaxed">MTTR dropped to 22 minutes within three months. Four junior engineers now handle tier-2 escalations independently. The two seniors? They actually took holiday for the first time in two years. Not every engagement produces numbers this clean — but this one did.</p>
+      </div>
+    </div>
+
+    <div class="grid sm:grid-cols-3 gap-6 mt-8 text-center">
+      <div><p class="font-heading font-semibold text-2xl text-gray-900">53 &rarr; 22 min</p><p class="text-sm text-gray-500 mt-1">Mean time to restore</p></div>
+      <div><p class="font-heading font-semibold text-2xl text-gray-900">4 engineers</p><p class="text-sm text-gray-500 mt-1">Now handling tier-2 independently</p></div>
+      <div><p class="font-heading font-semibold text-2xl text-gray-900">~&pound;140K</p><p class="text-sm text-gray-500 mt-1">Estimated year-1 downtime savings</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS — Classic Grid -->
+<section id="reviews" class="py-28 border-t border-gray-100" data-animate>
+  <div class="max-w-6xl mx-auto px-4 sm:px-6">
+    <div class="flex items-center gap-4 mb-14">
+      <h2 class="font-heading font-light text-3xl text-gray-900 tracking-wide">What clients say</h2>
+      <div class="flex-1 h-px bg-gray-200"></div>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="border border-gray-200 rounded-lg p-7">
+        <p class="text-gray-700 leading-relaxed">"We tried two other providers before Fargate. Both ran through slides for a week and called it training. Fargate gave us broken lab environments and said 'fix them.' It was uncomfortable. It also worked."</p>
+        <p class="mt-5 text-sm font-medium text-gray-900">Alistair Grant</p>
+        <p class="text-xs text-gray-500">Head of Infrastructure, Lothian Wealth Partners</p>
+      </div>
+      <div class="border border-gray-200 rounded-lg p-7">
+        <p class="text-gray-700 leading-relaxed">"The ROI report alone justified the spend to our board. Having actual numbers — not just 'the team feels more confident' — made the renewal conversation straightforward."</p>
+        <p class="mt-5 text-sm font-medium text-gray-900">Fiona Campbell</p>
+        <p class="text-xs text-gray-500">IT Director, Highland Medical Systems</p>
+      </div>
+      <div class="border border-gray-200 rounded-lg p-7">
+        <p class="text-gray-700 leading-relaxed">"Honest, no-nonsense. Told us our junior team needed Essential before Professional — saved us from wasting money on the wrong tier. You don't see that often."</p>
+        <p class="mt-5 text-sm font-medium text-gray-900">Raj Patel</p>
+        <p class="text-xs text-gray-500">CTO, Canongate Digital</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="py-28 bg-gray-50 border-t border-gray-100" data-animate>
+  <div class="max-w-2xl mx-auto px-4 sm:px-6">
+    <div class="flex items-center gap-4 mb-14">
+      <h2 class="font-heading font-light text-3xl text-gray-900 tracking-wide">FAQ</h2>
+      <div class="flex-1 h-px bg-gray-200"></div>
+    </div>
+
+    <div class="space-y-4">
+      <details class="border border-gray-200 rounded-lg bg-white group">
+        <summary class="flex justify-between items-center p-5 cursor-pointer text-gray-900 font-medium hover:text-brand-600 transition-colors tracking-wide">How quickly can we start?<svg class="w-5 h-5 text-brand-600 group-open:rotate-45 transition-transform flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg></summary>
+        <div class="px-5 pb-5 text-gray-600 text-sm leading-relaxed">Essential and Professional cohorts start twice monthly. Enterprise engagements typically need 2–3 weeks for the initial skills audit and curriculum design before training begins.</div>
+      </details>
+      <details class="border border-gray-200 rounded-lg bg-white group">
+        <summary class="flex justify-between items-center p-5 cursor-pointer text-gray-900 font-medium hover:text-brand-600 transition-colors tracking-wide">Can you deliver on-site?<svg class="w-5 h-5 text-brand-600 group-open:rotate-45 transition-transform flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg></summary>
+        <div class="px-5 pb-5 text-gray-600 text-sm leading-relaxed">Yes — for Enterprise tier. Anywhere in the UK. Travel and accommodation are included in the quote. No separate invoice for expenses.</div>
+      </details>
+      <details class="border border-gray-200 rounded-lg bg-white group">
+        <summary class="flex justify-between items-center p-5 cursor-pointer text-gray-900 font-medium hover:text-brand-600 transition-colors tracking-wide">What's the refund policy?<svg class="w-5 h-5 text-brand-600 group-open:rotate-45 transition-transform flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg></summary>
+        <div class="px-5 pb-5 text-gray-600 text-sm leading-relaxed">Full refund within 14 days of enrolment if you haven't started the lab modules. After that, no refunds — but you can transfer your place to a colleague.</div>
+      </details>
+      <details class="border border-gray-200 rounded-lg bg-white group">
+        <summary class="flex justify-between items-center p-5 cursor-pointer text-gray-900 font-medium hover:text-brand-600 transition-colors tracking-wide">Do you offer CPD accreditation?<svg class="w-5 h-5 text-brand-600 group-open:rotate-45 transition-transform flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg></summary>
+        <div class="px-5 pb-5 text-gray-600 text-sm leading-relaxed">Yes. All programmes are CPD-accredited. Hours are logged and a certificate issued upon completion — useful for annual reviews and L&D records.</div>
+      </details>
+      <details class="border border-gray-200 rounded-lg bg-white group">
+        <summary class="flex justify-between items-center p-5 cursor-pointer text-gray-900 font-medium hover:text-brand-600 transition-colors tracking-wide">Can our employer pay by invoice?<svg class="w-5 h-5 text-brand-600 group-open:rotate-45 transition-transform flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg></summary>
+        <div class="px-5 pb-5 text-gray-600 text-sm leading-relaxed">Yes. NET 30 terms for UK corporate clients. Purchase orders accepted. We can provide a summary document for your procurement or L&D team.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- CTA — Floating Card -->
+<section class="py-20 border-t border-gray-100" data-animate>
+  <div class="max-w-xl mx-auto px-4 sm:px-6">
+    <div class="bg-brand-600 rounded-xl p-10 text-center text-white shadow-lg">
+      <h2 class="font-heading font-light text-2xl tracking-wide mb-4">Ready to talk specifics?</h2>
+      <p class="text-brand-200 mb-8 font-light leading-relaxed">Tell us your team size and timeline. We'll send a proposal with pricing, curriculum outline, and projected outcomes within 48 hours.</p>
+      <a href="#quote" class="inline-block px-8 py-3.5 bg-white text-brand-700 font-semibold rounded-lg hover:bg-brand-50 transition-colors tracking-wide">Get a Quote</a>
+    </div>
+  </div>
+</section>
+
+<!-- QUOTE FORM — Primary Goal -->
+<section id="quote" class="py-28 bg-gray-50 border-t border-gray-100" data-animate>
+  <div class="max-w-6xl mx-auto px-4 sm:px-6">
+    <div class="grid lg:grid-cols-2 gap-16 items-start">
+      <div>
+        <div class="flex items-center gap-4 mb-3">
+          <h2 class="font-heading font-light text-3xl text-gray-900 tracking-wide">Get your quote</h2>
+          <div class="flex-1 h-px bg-gray-200"></div>
+        </div>
+        <p class="text-gray-500 font-light text-lg mb-8 leading-loose">Tell us about your team and what you're trying to achieve. We'll respond with a detailed proposal — pricing, timeline, curriculum outline, and a projected ROI estimate.</p>
+        <div class="space-y-3 text-gray-500 text-sm">
+          <div class="flex gap-3 items-center"><svg class="w-4 h-4 text-brand-600 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg><a href="tel:+441312478603" class="hover:text-gray-900 transition-colors">+44 131 247 8603</a></div>
+          <div class="flex gap-3 items-center"><svg class="w-4 h-4 text-brand-600 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/></svg><a href="mailto:enquiries@fargatesystems.co.uk" class="hover:text-gray-900 transition-colors">enquiries@fargatesystems.co.uk</a></div>
+          <div class="flex gap-3 items-start"><svg class="w-4 h-4 text-brand-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg><span>54 George Street, 3rd Floor<br>Edinburgh EH2 2LR</span></div>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-lg border border-gray-200 p-8">
+        <form method="POST" action="thanks.html" class="space-y-5">
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div><label for="q-name" class="block text-sm text-gray-700 mb-1">Name</label><input type="text" id="q-name" name="name" required placeholder="Full name" class="w-full px-4 py-2.5 rounded-lg border border-gray-200 text-gray-900 placeholder-gray-400 focus:border-brand-500 focus:ring-1 focus:ring-brand-500 text-sm"></div>
+            <div><label for="q-company" class="block text-sm text-gray-700 mb-1">Company</label><input type="text" id="q-company" name="company" required placeholder="Organisation" class="w-full px-4 py-2.5 rounded-lg border border-gray-200 text-gray-900 placeholder-gray-400 focus:border-brand-500 focus:ring-1 focus:ring-brand-500 text-sm"></div>
+          </div>
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div><label for="q-email" class="block text-sm text-gray-700 mb-1">Email</label><input type="email" id="q-email" name="email" required placeholder="you@company.co.uk" class="w-full px-4 py-2.5 rounded-lg border border-gray-200 text-gray-900 placeholder-gray-400 focus:border-brand-500 focus:ring-1 focus:ring-brand-500 text-sm"></div>
+            <div><label for="q-phone" class="block text-sm text-gray-700 mb-1">Phone</label><input type="tel" id="q-phone" name="phone" required placeholder="+44 ..." class="w-full px-4 py-2.5 rounded-lg border border-gray-200 text-gray-900 placeholder-gray-400 focus:border-brand-500 focus:ring-1 focus:ring-brand-500 text-sm"></div>
+          </div>
+          <div><label for="q-seats" class="block text-sm text-gray-700 mb-1">Number of seats</label><select id="q-seats" name="seats" class="w-full px-4 py-2.5 rounded-lg border border-gray-200 text-gray-900 focus:border-brand-500 focus:ring-1 focus:ring-brand-500 text-sm"><option value="">How many people?</option><option value="1-5">1 – 5</option><option value="6-15">6 – 15</option><option value="16-50">16 – 50</option><option value="50+">50+</option></select></div>
+          <div><label for="q-tier" class="block text-sm text-gray-700 mb-1">Programme of interest</label><select id="q-tier" name="tier" class="w-full px-4 py-2.5 rounded-lg border border-gray-200 text-gray-900 focus:border-brand-500 focus:ring-1 focus:ring-brand-500 text-sm"><option value="">Select a tier</option><option value="essential">Essential</option><option value="professional">Professional</option><option value="enterprise">Enterprise / Custom</option><option value="not-sure">Not sure yet</option></select></div>
+          <div><label for="q-timeline" class="block text-sm text-gray-700 mb-1">Timeline</label><select id="q-timeline" name="timeline" class="w-full px-4 py-2.5 rounded-lg border border-gray-200 text-gray-900 focus:border-brand-500 focus:ring-1 focus:ring-brand-500 text-sm"><option value="">When?</option><option value="asap">As soon as possible</option><option value="1-3m">Within 1–3 months</option><option value="3-6m">3–6 months</option><option value="exploring">Just exploring</option></select></div>
+          <div><label for="q-notes" class="block text-sm text-gray-700 mb-1">Notes (optional)</label><textarea id="q-notes" name="notes" rows="3" placeholder="Budget constraints, specific topics, or questions" class="w-full px-4 py-2.5 rounded-lg border border-gray-200 text-gray-900 placeholder-gray-400 focus:border-brand-500 focus:ring-1 focus:ring-brand-500 text-sm resize-y"></textarea></div>
+          <button type="submit" class="w-full px-6 py-3 border-2 border-brand-600 text-brand-600 font-semibold rounded-lg hover:bg-brand-600 hover:text-white transition-colors text-sm tracking-wide">Request Estimate</button>
+          <p class="text-xs text-gray-400 text-center">We'll use your data to prepare your quote. See our <a href="privacy.html" class="text-brand-600 underline hover:text-brand-700">Privacy Policy</a>.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER — Mega Footer -->
+<footer class="bg-brand-950 text-gray-400 pt-16 pb-8">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
+      <div class="lg:col-span-2">
+        <div class="flex items-center gap-2 mb-4">
+          <span class="w-7 h-7 bg-brand-600 rounded flex items-center justify-center"><svg class="w-3.5 h-3.5" viewBox="0 0 16 16" fill="none"><rect x="2" y="2" width="12" height="2.5" rx="0.5" fill="#fbbf24" opacity=".85"/><rect x="2" y="6.5" width="9" height="2.5" rx="0.5" fill="#fbbf24" opacity=".85"/><rect x="2" y="11" width="10.5" height="2.5" rx="0.5" fill="#fbbf24" opacity=".85"/></svg></span>
+          <span class="font-heading font-semibold text-white tracking-wide">Fargate Systems Training</span>
+        </div>
+        <p class="text-sm leading-relaxed max-w-xs">Professional development for system administrators. Edinburgh-based since 2013.</p>
+      </div>
+      <div>
+        <h3 class="font-heading text-white text-sm mb-4 tracking-wide">Programmes</h3>
+        <ul class="space-y-2 text-sm"><li><a href="#tiers" class="hover:text-white transition-colors">Essential</a></li><li><a href="#tiers" class="hover:text-white transition-colors">Professional</a></li><li><a href="#tiers" class="hover:text-white transition-colors">Enterprise</a></li></ul>
+      </div>
+      <div>
+        <h3 class="font-heading text-white text-sm mb-4 tracking-wide">Company</h3>
+        <ul class="space-y-2 text-sm"><li><a href="#case" class="hover:text-white transition-colors">Case Study</a></li><li><a href="#reviews" class="hover:text-white transition-colors">Reviews</a></li><li><a href="#faq" class="hover:text-white transition-colors">FAQ</a></li><li><a href="privacy.html" class="hover:text-white transition-colors">Privacy Policy</a></li><li><a href="terms.html" class="hover:text-white transition-colors">Terms of Service</a></li></ul>
+      </div>
+      <div>
+        <h3 class="font-heading text-white text-sm mb-4 tracking-wide">Contact</h3>
+        <ul class="space-y-2 text-sm">
+          <li>Fargate Systems Training Ltd</li>
+          <li>54 George Street, 3rd Floor</li>
+          <li>Edinburgh EH2 2LR</li>
+          <li><a href="tel:+441312478603" class="hover:text-white transition-colors">+44 131 247 8603</a></li>
+          <li><a href="mailto:enquiries@fargatesystems.co.uk" class="hover:text-white transition-colors">enquiries@fargatesystems.co.uk</a></li>
+          <li class="text-gray-600 text-xs pt-2">Company No. 08534217 &middot; VAT: GB 183 4726 09</li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-gray-800 pt-6 text-center text-xs text-gray-600">&copy; 2026 Fargate Systems Training Ltd. All rights reserved.</div>
+  </div>
+</footer>
+
+<!-- COOKIE CONSENT -->
+<div id="cookie-banner" class="fixed bottom-0 inset-x-0 z-50 bg-white border-t border-gray-200 p-4 shadow-lg" style="display:none;">
+  <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+    <p class="text-sm text-gray-500">Cookies help us measure site traffic and remember your settings. <a href="privacy.html" class="text-brand-600 underline">Learn more</a></p>
+    <div class="flex gap-3 flex-shrink-0">
+      <button id="ck-reject" class="px-4 py-2 text-sm border border-gray-200 rounded-lg text-gray-600 hover:bg-gray-50">Necessary Only</button>
+      <button id="ck-accept" class="px-4 py-2 text-sm bg-brand-600 text-white rounded-lg hover:bg-brand-700 font-medium">Accept All</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// Mobile menu — slide from left
+const mobBtn=document.getElementById('mob-btn'),mobMenu=document.getElementById('mob-menu'),mobClose=document.getElementById('mob-close'),mobBd=document.getElementById('mob-backdrop');
+function openM(){mobMenu.style.transform='translateX(0)';mobBd.classList.remove('hidden')}
+function closeM(){mobMenu.style.transform='translateX(-100%)';mobBd.classList.add('hidden')}
+mobBtn.addEventListener('click',openM);mobClose.addEventListener('click',closeM);mobBd.addEventListener('click',closeM);
+document.querySelectorAll('.mob-link').forEach(l=>l.addEventListener('click',closeM));
+
+// Fade-in animations
+const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('fade-v');e.target.classList.remove('fade-h')}})},{threshold:0.08});
+document.querySelectorAll('[data-animate]').forEach(el=>{el.classList.add('fade-h');obs.observe(el)});
+
+// Cookie consent
+(function(){const b=document.getElementById('cookie-banner');if(!localStorage.getItem('cookie-consent'))b.style.display='block';document.getElementById('ck-accept').addEventListener('click',()=>{localStorage.setItem('cookie-consent','all');b.style.display='none'});document.getElementById('ck-reject').addEventListener('click',()=>{localStorage.setItem('cookie-consent','necessary');b.style.display='none'})})();
+</script>
+</body>
+</html>

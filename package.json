@@ -1,0 +1,13 @@
+{
+  "name": "fargate-systems-training",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Fargate Systems Training Ltd — sysadmin professional development, Edinburgh",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.0"
+  }
+}
